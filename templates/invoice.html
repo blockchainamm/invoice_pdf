@@ -1,0 +1,114 @@
+<div class="page-container">
+    Page
+    <span class="page"></span>
+    of
+    <span class="pages"></span>
+  </div>
+  
+  <div class="logo-container">
+    <img
+      style="height: 18px"
+      src="https://app.useanvil.com/img/email-logo-black.png"
+    >
+  </div>
+  
+  <table class="invoice-info-container">
+    <tr>
+      <td rowspan="2" class="client-name">
+        {{client_name}}
+      </td>
+      <td>
+        Anvil Co
+      </td>
+    </tr>
+    <tr>
+      <td>
+        123 Main Street
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Invoice Date: <strong>{{today_date}}</strong>
+      </td>
+      <td>
+        San Francisco CA, 94103
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Invoice No: <strong>12345</strong>
+      </td>
+      <td>
+        hello@test.com
+      </td>
+    </tr>
+  </table>
+  
+  
+  <table class="line-items-container">
+    <thead>
+      <tr>
+        <th class="heading-quantity">Qty</th>
+        <th class="heading-description">Description</th>
+        <th class="heading-price">Price</th>
+        <th class="heading-subtotal">Subtotal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{item1_qty}}</td>
+        <td>{{item1}}</td>
+        <td class="right">{{item1_price}}</td>
+        <td class="bold">{{item1_subtotal}}</td>
+      </tr>
+      <tr>
+        <td>{{item2_qty}}</td>
+        <td>{{item2}}</td>
+        <td class="right">{{item2_price}}</td>
+        <td class="bold">{{item2_subtotal}}</td>
+      </tr>
+      <tr>
+        <td>{{item3_qty}}</td>
+        <td>{{item3}}</td>
+        <td class="right">{{item3_price}}</td>
+        <td class="bold">{{item3_subtotal}}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <table class="line-items-container has-bottom-border">
+    <thead>
+      <tr>
+        <th>Payment Info</th>
+        <th>Due By</th>
+        <th>Total Due</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="payment-info">
+          <div>
+            Account No: <strong>123567744</strong>
+          </div>
+          <div>
+            Routing No: <strong>120000547</strong>
+          </div>
+        </td>
+        <td class="large">{{due_date}}</td>
+        <td class="large total">{{total}}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <div class="footer">
+    <div class="footer-info">
+      <span>hello@test.com</span> |
+      <span>555 444 6666</span> |
+      <span>test.com</span>
+    </div>
+    <div class="footer-thanks">
+      <img src="https://github.com/anvilco/html-pdf-invoice-template/raw/main/img/heart.png" alt="heart">
+      <span>Thank you!</span>
+    </div>
+  </div>
